@@ -1,0 +1,82 @@
+2022-11-23 11:56:43,483 DEBUG cd deepak_bench && python3 -m venv env
+2022-11-23 11:56:59,527 DEBUG cd deepak_bench && /home/spider/deepak_bench/env/bin/python -m pip install --quiet --upgrade pip
+2022-11-23 11:57:09,310 LOG Getting frappe
+2022-11-23 11:57:09,310 DEBUG cd deepak_bench/apps && git clone https://github.com/frappe/frappe.git  --depth 1 --origin upstream
+2022-11-23 11:57:24,018 LOG Installing frappe
+2022-11-23 11:57:24,019 DEBUG cd /home/spider/deepak_bench && /home/spider/deepak_bench/env/bin/python -m pip install --quiet --upgrade -e /home/spider/deepak_bench/apps/frappe 
+2022-11-23 12:00:56,544 DEBUG cd /home/spider/deepak_bench/apps/frappe && yarn install
+2022-11-23 12:01:38,255 DEBUG cd deepak_bench && bench build
+2022-11-23 12:01:39,296 INFO /usr/bin/bench build
+2022-11-23 12:03:23,413 LOG setting up backups
+2022-11-23 12:03:23,696 LOG backups were set up
+2022-11-23 12:03:23,701 INFO Bench deepak_bench initialized
+2022-11-23 12:05:58,058 INFO /usr/bin/bench new-site deepak.com
+2022-11-23 12:06:28,057 INFO /usr/bin/bench new-site deepak.com
+2022-11-23 12:06:57,395 INFO /usr/bin/bench new-site deepak.com
+2022-11-23 12:07:57,473 INFO /usr/bin/bench new-site deepak.com
+2022-11-23 12:11:56,618 INFO /usr/bin/bench use deepak.com
+2022-11-23 12:39:08,432 INFO /usr/bin/bench start
+2022-11-23 12:39:12,191 INFO /usr/bin/bench schedule
+2022-11-23 12:39:13,096 INFO /usr/bin/bench worker --queue short
+2022-11-23 12:39:13,226 INFO /usr/bin/bench serve --port 8000
+2022-11-23 12:39:13,249 INFO /usr/bin/bench watch
+2022-11-23 12:39:13,478 INFO /usr/bin/bench worker --queue long
+2022-11-23 12:39:13,592 INFO /usr/bin/bench worker --queue default
+2022-11-23 13:35:12,375 INFO /usr/bin/bench get-app gameplan
+2022-11-23 13:35:14,047 LOG Getting gameplan
+2022-11-23 13:35:14,048 DEBUG cd ./apps && git clone https://github.com/frappe/gameplan.git  --depth 1 --origin upstream
+2022-11-23 13:35:24,721 LOG Installing gameplan
+2022-11-23 13:35:25,824 DEBUG cd /home/spider/deepak_bench && /home/spider/deepak_bench/env/bin/python -m pip install --quiet --upgrade -e /home/spider/deepak_bench/apps/gameplan 
+2022-11-23 13:35:35,187 DEBUG cd /home/spider/deepak_bench/apps/gameplan && yarn install
+2022-11-23 13:36:14,049 DEBUG bench build --app gameplan
+2022-11-23 13:36:14,826 INFO /usr/bin/bench build --app gameplan
+2022-11-23 13:43:45,929 INFO /usr/bin/bench --site deepak.com install-app gameplan
+2022-11-23 13:44:35,378 INFO /usr/bin/bench --site deepak.com add-to-hosts
+2022-11-23 13:44:52,752 INFO /usr/bin/bench start
+2022-11-23 13:44:58,910 INFO /usr/bin/bench worker --queue short
+2022-11-23 13:44:59,121 INFO /usr/bin/bench schedule
+2022-11-23 13:44:59,220 INFO /usr/bin/bench worker --queue default
+2022-11-23 13:44:59,749 INFO /usr/bin/bench watch
+2022-11-23 13:45:00,258 INFO /usr/bin/bench serve --port 8000
+2022-11-23 13:45:00,412 INFO /usr/bin/bench worker --queue long
+2022-11-23 18:00:02,352 INFO /usr/bin/bench --verbose --site all backup
+2022-11-24 00:00:03,322 INFO /usr/bin/bench --verbose --site all backup
+2022-11-24 00:04:38,947 INFO /usr/bin/bench start
+2022-11-24 00:04:44,202 INFO /usr/bin/bench watch
+2022-11-24 00:04:44,872 INFO /usr/bin/bench worker --queue default
+2022-11-24 00:04:45,018 INFO /usr/bin/bench worker --queue short
+2022-11-24 00:04:45,497 INFO /usr/bin/bench worker --queue long
+2022-11-24 00:04:45,625 INFO /usr/bin/bench schedule
+2022-11-24 00:04:45,732 INFO /usr/bin/bench serve --port 8000
+2022-11-24 11:03:46,704 INFO /usr/bin/bench use deepak.com
+2022-11-24 11:03:58,275 INFO /usr/bin/bench start
+2022-11-24 11:04:04,865 INFO /usr/bin/bench schedule
+2022-11-24 11:04:04,992 INFO /usr/bin/bench worker --queue long
+2022-11-24 11:04:05,052 INFO /usr/bin/bench watch
+2022-11-24 11:04:05,380 INFO /usr/bin/bench worker --queue default
+2022-11-24 11:04:05,406 INFO /usr/bin/bench worker --queue short
+2022-11-24 11:04:05,436 INFO /usr/bin/bench serve --port 8000
+2022-11-24 15:19:09,873 INFO /usr/bin/bench use deepak.com
+2022-11-24 15:19:21,740 INFO /usr/bin/bench start
+2022-11-24 15:19:26,401 INFO /usr/bin/bench worker --queue long
+2022-11-24 15:19:26,407 INFO /usr/bin/bench watch
+2022-11-24 15:19:26,468 INFO /usr/bin/bench worker --queue default
+2022-11-24 15:19:26,633 INFO /usr/bin/bench worker --queue short
+2022-11-24 15:19:26,767 INFO /usr/bin/bench schedule
+2022-11-24 15:19:26,785 INFO /usr/bin/bench serve --port 8000
+2022-11-24 16:15:29,886 INFO /usr/bin/bench use deepak.com
+2022-11-24 16:15:42,316 INFO /usr/bin/bench start
+2022-11-24 16:15:46,851 INFO /usr/bin/bench worker --queue long
+2022-11-24 16:15:46,875 INFO /usr/bin/bench schedule
+2022-11-24 16:15:46,970 INFO /usr/bin/bench serve --port 8000
+2022-11-24 16:15:47,029 INFO /usr/bin/bench worker --queue short
+2022-11-24 16:15:47,061 INFO /usr/bin/bench watch
+2022-11-24 16:15:47,094 INFO /usr/bin/bench worker --queue default
+2022-11-24 22:34:13,226 INFO /usr/bin/bench start
+2022-11-24 22:34:17,899 INFO /usr/bin/bench worker --queue default
+2022-11-24 22:34:18,750 INFO /usr/bin/bench schedule
+2022-11-24 22:34:18,774 INFO /usr/bin/bench worker --queue long
+2022-11-24 22:34:19,297 INFO /usr/bin/bench watch
+2022-11-24 22:34:19,495 INFO /usr/bin/bench worker --queue short
+2022-11-24 22:34:20,039 INFO /usr/bin/bench serve --port 8000
+2022-11-25 12:00:03,013 INFO /usr/bin/bench --verbose --site all backup
